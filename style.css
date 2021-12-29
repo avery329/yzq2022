@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.329);
+    transition: all .7s ease;
+}
+
+.sidebar header{
+    font-size: 30px;
+    font-family: '黑体';
+    color: rgba(255, 255, 255, 0);
+    text-align: end;
+    text-align: justify;
+    line-height: 206px;
+    background: #5f240900;
+    background-image: url(myimg.png);
+    opacity: 0.7; /*设置图片透明度*/
+    background-size: 86px 86px;
+    background-repeat: no-repeat;
+    background-position: center;
+    user-select: none;
+    /*border-bottom: 1px solid rgb(219, 219, 219,.7);*/
+}
+
+
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 4px solid rgb(219, 219, 219,.1);
+    border-bottom: 1px solid rgb(219, 219, 219,.7);
+    transition-delay: .05s;
+}
+
+ul li:hover a{
+    padding-left: 50px;
+    transition-delay: .03s;
+}
+
+.sidebar ul a i{
+    
+    margin-right: 16px;
+}
+
+
+
+
+#check{
+    display: none;
+    
+}
+
+label #btn,label #cancel,label #search{
+    
+    position: absolute;
+    cursor: pointer;
+    background: #ffffff00;
+    border-radius: 9px;
+}
+
+label #btn{
+    position: fixed;
+    left: 30px;
+    top: 25px;
+    font-size: 35px;
+    color: rgb(255, 255, 255,0.9);
+    padding: 6px 12px;
+    transition: all .6s;
+}
+
+label #search {
+    position: fixed;
+    right: 30px;
+    top: 32px;
+    font-size: 35px;
+    color: rgb(255, 255, 255,0.9);
+    padding: 6px 12px;
+    
+}
+label #circle0 {
+    position: fixed;
+    right: 20px;
+    top: 300px;
+    font-size: 5px;
+    color: rgb(255, 255, 255,0.9);
+    padding: 6px 12px;
+    
+}
+label #circle1 {
+    position: fixed;
+    right: 20px;
+    top: 330px;
+    font-size: 5px;
+    color: rgb(255, 255, 255,0.9);
+    padding: 6px 12px;
+    
+}
+
+label #circle2 {
+    position: fixed;
+    right: 20px;
+    top: 360px;
+    font-size: 5px;
+    color: rgb(255, 255, 255,0.9);
+    padding: 6px 12px;
+    
+}
+
+
+
+
+
+label #cancel{
+    position: fixed;
+    z-index: 1111;
+    left: -195px;
+    top: 15px;
+    font-size:30px;
+    color: rgba(255, 255, 255, 0.897);
+    padding: 4px 9px;
+    transition: all .6s ease;
+}
+
+label #upbtn{
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    font-size: 100px;
+    color: rgb(255, 255, 255,0.9);
+    
+}
+
+
+
+
+
+
+
+
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+/*#check:checked ~ section{
+    
+    width:150% ;
+
+}*/
+
+section{
+    /*下面的是背景参数*/
+    background: url(bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1000vh;/*网页长度*/
+    z-index:1;  
+    background-attachment: fixed;
+    /*transition:  .5s;*/
+    /*下面的是文字参数*/
+       
+    
+}
